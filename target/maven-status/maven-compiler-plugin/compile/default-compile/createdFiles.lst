@@ -1,0 +1,17 @@
+fr\hb\ElectricBusiness\repository\LieuRepository.class
+fr\hb\ElectricBusiness\service\UtilisateurService.class
+fr\hb\ElectricBusiness\business\Reservation.class
+fr\hb\ElectricBusiness\controller\ReservationController.class
+fr\hb\ElectricBusiness\repository\ReservationRepository.class
+fr\hb\ElectricBusiness\business\Borne.class
+fr\hb\ElectricBusiness\business\Utilisateur.class
+fr\hb\ElectricBusiness\service\ReservationService.class
+fr\hb\ElectricBusiness\repository\BorneRepository.class
+fr\hb\ElectricBusiness\repository\UtilisateurRepository.class
+fr\hb\ElectricBusiness\controller\LieuController.class
+fr\hb\ElectricBusiness\controller\UtilisateurController.class
+fr\hb\ElectricBusiness\service\BorneService.class
+fr\hb\ElectricBusiness\controller\BorneController.class
+fr\hb\ElectricBusiness\ElectricBusinessApplication.class
+fr\hb\ElectricBusiness\service\LieuService.class
+fr\hb\ElectricBusiness\business\Lieu.class
