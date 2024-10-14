@@ -41,8 +41,8 @@ public class Data {
 		reservationTest.setBorne(borneTest); */
 		
 		
-		lieuRepo.save(lieuTest);
-		borneRepo.save(borneTest);
+		/*lieuRepo.save(lieuTest);
+		borneRepo.save(borneTest); */
 		
 		/*reservationRepo.save(reservationTest);
 		utilisateurRepo.save(utilisateurTest);*/

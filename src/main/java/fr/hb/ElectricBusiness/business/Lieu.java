@@ -5,18 +5,29 @@ import java.util.List;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.experimental.SuperBuilder;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
+@SuperBuilder
 public class Lieu {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
+	
+	@NonNull
 	private String adresse;
+	@NonNull
 	private String codePostal;
+	@NonNull
 	private String ville;
 
 	@OneToMany(mappedBy = "lieu")
