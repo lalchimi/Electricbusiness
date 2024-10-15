@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import fr.hb.ElectricBusiness.business.Lieu;
 import fr.hb.ElectricBusiness.business.Reservation;
 import fr.hb.ElectricBusiness.repository.ReservationRepository;
 import fr.hb.ElectricBusiness.service.ReservationService;
@@ -25,6 +24,12 @@ public class ReservationServiceImplement implements ReservationService {
     public List<Reservation> recupererReservations() {
         return reservationRepository.findAll();
     }
+    
+    @Override
+    public Reservation recupererReservation(Long id) {
+        return reservationRepository.findById(id).orElse(null);
+    }
+    
     
 	@Override
 	public boolean deleteReservation(Long id) {

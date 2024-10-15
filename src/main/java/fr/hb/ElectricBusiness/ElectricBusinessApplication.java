@@ -2,13 +2,10 @@ package fr.hb.ElectricBusiness;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import fr.hb.ElectricBusiness.business.Lieu;
-import fr.hb.ElectricBusiness.controller.BorneController;
-import fr.hb.ElectricBusiness.controller.LieuController;
-import fr.hb.ElectricBusiness.data.Data;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 public class ElectricBusinessApplication {
 
 	public static void main(String[] args) {
