@@ -1,9 +1,2 @@
-fr\hb\ElectricBusiness\business\UtilisateurTest.class
-fr\hb\ElectricBusiness\controller\ReservationTest.class
-fr\hb\ElectricBusiness\business\BorneTest.class
-fr\hb\ElectricBusiness\controller\BorneTest.class
-fr\hb\ElectricBusiness\business\ReservationTest.class
-fr\hb\ElectricBusiness\controller\LieuTest.class
-fr\hb\ElectricBusiness\ElectricBusinessApplicationTest.class
-fr\hb\ElectricBusiness\business\LieutTest.class
-fr\hb\ElectricBusiness\controller\UtilisateurTest.class
+fr\hb\ElectricBusiness\controller\rest\BorneRestControllerTest.class
+fr\hb\ElectricBusiness\repository\BorneRepositoryTest.class

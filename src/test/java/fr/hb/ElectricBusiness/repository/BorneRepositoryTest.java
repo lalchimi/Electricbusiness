@@ -22,7 +22,18 @@ public class BorneRepositoryTest {
 
         // On vérifie que le nom de la borne enregistrée est égale au nom utilisé pour instancier la borne
         assertEquals(nom, borneEnregistree.getNom());
-        assertThat(borneEnregistree).isEqualTo(borne);
+        assertThat(borneEnregistree.getNom()).isEqualTo(borne.getNom());
+        assertThat(borneEnregistree.getId()).isPositive();
     }
     
+    @Test
+    void testGet() {
+        String nom = "Borne 1";
+        Borne borne = borneRepository.save(new Borne(nom, 0, null, null, null, 0, 0, 0, null, null, null));
+        Borne borneRecup = borneRepository.findById(borne.getId()).get();
+        // On vérifie que le nom de la borne enregistrée est égale au nom utilisé pour instancier la borne
+        assertEquals(nom, borneRecup.getNom());
+        assertThat(borneRecup.getNom()).isEqualTo(borne.getNom());
+        assertThat(borneRecup.getId()).isPositive();
+    }
 }

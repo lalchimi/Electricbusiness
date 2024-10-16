@@ -8,14 +8,14 @@ import fr.hb.ElectricBusiness.service.BorneService;
 import fr.hb.ElectricBusiness.service.ReservationService;
 import lombok.AllArgsConstructor;
 
-@Component
+//@Component
 @AllArgsConstructor
 public class ReservationAutomate {
 
     private ReservationService reservationService;
     private BorneService borneService;
 
-    @Scheduled(cron="* * * * * *")
+    @Scheduled(cron="0 0 * * * *")
     private void ajouterReservation() {
         reservationService.ajouterReservation(new Reservation(borneService.getBorne(4L)));
     }

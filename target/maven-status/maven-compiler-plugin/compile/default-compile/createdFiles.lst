@@ -9,6 +9,7 @@ fr\hb\ElectricBusiness\dto\ReservationDto.class
 fr\hb\ElectricBusiness\business\Lieu$LieuBuilder.class
 fr\hb\ElectricBusiness\service\implement\BorneServiceImplement.class
 fr\hb\ElectricBusiness\service\LieuService.class
+fr\hb\ElectricBusiness\automate\ReservationAutomate.class
 fr\hb\ElectricBusiness\controller\rest\ReservationRestController.class
 fr\hb\ElectricBusiness\dto\BorneDto.class
 fr\hb\ElectricBusiness\business\Reservation.class

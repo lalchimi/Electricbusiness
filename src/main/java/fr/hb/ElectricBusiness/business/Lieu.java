@@ -2,6 +2,8 @@ package fr.hb.ElectricBusiness.business;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
@@ -23,13 +25,12 @@ public class Lieu {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NonNull
+
 	private String adresse;
-	@NonNull
 	private String codePostal;
-	@NonNull
 	private String ville;
 
+	@JsonIgnore
 	@OneToMany(mappedBy = "lieu")
 	private List<Borne> bornes;
 
